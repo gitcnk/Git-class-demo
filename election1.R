@@ -12,7 +12,7 @@ FL_edu <- FL %>%
 
 FL_edu_pca <- prcomp(FL_edu, center = T, scale = T)  
 summary(FL_edu_pca)
-FL_edu_pca
+plot(FL_edu_pca$sdev)
 
 
 PC1 <- predict(FL_edu_pca)[,1]
@@ -32,3 +32,32 @@ ggplot( data = FL) +
                             y = education_index,
                             col = who_won_2012)) +
   coord_flip()
+
+
+## Correlation with unemployemt
+
+#  Some cleaning before plotting.
+
+gsub(pattern = ',', replacement = '', x = FL$unemployed)
+FL$unemployed <- as.numeric(gsub(pattern = ',', replacement = '', x = FL$unemployed))
+
+ggplot( data = FL) +
+  geom_point(mapping = aes( x = unemployed,
+                            y = education_index,
+                            col = who_won_2012)) 
+
+
+
+ggplot( data = FL) +
+  geom_point(mapping = aes( x = unemployment_rate,
+                            y = edPC1,
+                            col = who_won_2012)) +
+  scale_color_manual(values = c('blue',  'red'))
+
+
+
+ggplot( data = FL) +
+  geom_point(mapping = aes( x = unemployment_rate,
+                            y = education_index,
+                            col = who_won_2012)) +
+  scale_color_manual(values = c('blue',  'red'))
