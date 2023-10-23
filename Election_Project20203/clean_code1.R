@@ -1,3 +1,5 @@
+## Hello
+
 library(pdftools)
 library(tidyverse)
 mytext <- pdf_text(pdf = 'testpdf.pdf')
@@ -5,6 +7,9 @@ mytext <- pdf_text(pdf = 'testpdf.pdf')
 cat(mytext, sep = '\n', file = 'mycodebook.txt')
 
 mycodebook <- paste(readLines('mycodebook.txt'), collapse = '\n' )
+
+#git config --global user.email "you@example.com"
+#git config --global user.name "Your Name"
 
 
 ## This variable contains all variables and their codes;
