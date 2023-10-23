@@ -22,4 +22,8 @@ this is benitha
 this is jungwon
 >>>>>>> 5d2ee1a47c17bb8568c202a78eabf9c897aa4681
 
+<<<<<<< HEAD
 katie
+=======
+jungwon
+>>>>>>> 9d4ad64a6cf053fe48fe1720eb3c1f1792f98d60
