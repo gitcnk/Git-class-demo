@@ -1,0 +1,12 @@
+## SetUup
+
+1. Clone the project by using the green "CODE" button.  Use HTTP method.
+
+2. Create a version control project using RStudio.  Paset the URL for remote repo
+
+3. Create a access token.
+    - Go to stettings
+    - Go to developer settings
+    - Use this token to push your updates
+    
+
