@@ -1,5 +1,7 @@
 library(dplyr)
+#DRAKE DRAKE DRAKE DRAKE
 
+#Drake #DR  akekeke
 FL <- read.csv('https://raw.githubusercontent.com/gitcnk/Data/master/ElectionData/Florida_before2016.csv')
 
 FL_edu <- FL %>%
